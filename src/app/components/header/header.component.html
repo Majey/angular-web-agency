@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+  <a class="navbar-brand col-3" href="#">{{title}}</a>
+
+  <button class="navbar-toggler" type="button" (click)="toggleCollapsed()" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" ngToggler></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault"  [ngbCollapse]="isCollapsed" >
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+      </li>
+
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>More</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
+          <a class="dropdown-item" href="#">Article Details</a>
+          <a class="dropdown-item" href="#">Terms & Conditions</a>
+          <a class="dropdown-item" href="#">Privacy Policy</a>
+        </div>
+      </li>
+
+      <button class="btn bg-primary btn-dark">Get quote</button>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+

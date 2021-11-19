@@ -1,0 +1,9 @@
+.navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.navbar-nav button {
+    border-radius: 50px;
+    padding: 0px 10px;
+}
